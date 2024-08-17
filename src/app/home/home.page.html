@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      myCameraApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Camera app</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-button (click)="takePicture()">Take Picture</ion-button>
+    <ion-button (click)="openLibrary()">Open Photo Library</ion-button>
+   
+    <img [src]="imageUrl" *ngIf="imageUrl" />
+   </ion-content>
+   
+</ion-content>
